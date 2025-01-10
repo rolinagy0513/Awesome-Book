@@ -1,0 +1,124 @@
+.loginpage-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-items: center;
+}
+
+.login-container{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    align-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.back-navigation-login{
+    display: flex;
+    height: 100%;
+}
+
+.back-navigation-login button{
+   display: flex;
+   justify-content: left;
+    border: none;
+    width: 100%;
+    font-size: 26px; 
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+    color: rgb(127, 73, 29);
+}
+
+.form-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+    .login-text{
+        font-style: italic;
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+    }
+
+  .form-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.996);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .input-element-login {
+    margin: 20px;
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 10px;
+    border-color: black;
+    color: black;
+  }
+
+  .checkbox-container-login{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    font-style: italic;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+  }
+
+  .checkbox-container-login input {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+  }
+
+  .submit-button-login {
+    cursor: pointer;
+    margin: 20px;
+    width: 30%;
+    height: 50px;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 10px;
+    border-color: black;
+    color: white;
+    background-color: rgba(100, 58, 29, 0.996);
+  }
+
+  .image-container{
+    background-image: url(../assets/loginBackground.jpg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.image-container p{
+    font-size: 150px;
+    font-style: italic;
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+

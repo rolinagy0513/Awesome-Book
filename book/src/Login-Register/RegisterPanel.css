@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register-page {
+  background-image: url(../assets/loginBackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.register-container {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.welcome-text {
+  background-image: url(../assets/loginBackground.jpg);
+  height: 100%;
+  width: 80%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  font-style: italic;
+  color: white;
+  font-size: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 900px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.register-text{
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+.input-element-register {
+  margin: 20px;
+  width: 80%;
+  height: 50px;
+  font-weight: bold;
+  font-size: large  ;
+  border-radius: 10px;
+  border-color: black;
+  color: black;
+}
+
+.input-element::placeholder {
+  margin: 10px;
+  font-weight: bold;
+  font-size: medium;
+  color: black;
+  font-style: italic;
+}
+
+.checkbox-container-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.checkbox-container-register input {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+}
+
+.submit-button-register {
+  cursor: pointer;
+  margin: 20px;
+  width: 30%;
+  height: 50px;
+  font-weight: bold;
+  font-size: medium;
+  border-radius: 10px;
+  border-color: black;
+  color: white;
+  background-color: rgba(100, 58, 29, 0.996);
+}
+
+.login-navigate-text{
+  font-style: italic;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.login-navigate-text:hover{
+  color:  rgba(143, 72, 25, 0.996);
+}
