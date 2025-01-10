@@ -4,7 +4,8 @@ import useCustomFetch from "../Hooks/fetchapi";
 import { FaArrowLeft } from 'react-icons/fa';
 import "./LoginPanel.css";
 
-const URL = "http://bookstoreapiazure.azurewebsites.net/api/Auth/Login";
+const url = import.meta.env.VITE_BOOK_API_URL_AUTH;
+const URL = `${url}/Login`;
 
 function LoginPanel(){
 

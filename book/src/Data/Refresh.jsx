@@ -2,7 +2,8 @@ import React,{useEffect, useState} from "react";
 import { data, useNavigate } from 'react-router-dom'; 
 import useCustomFetch from "../Hooks/fetchapi";
 
-const URL = "http://bookstoreapiazure.azurewebsites.net/api/Auth/Refresh";
+const url = import.meta.env.VITE_BOOK_API_URL_AUTH;
+const URL = `${url}/Refresh`;
 
 function Refresh(){
 

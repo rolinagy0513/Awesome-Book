@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import useCustomFetch from "../Hooks/fetchapi";
 import "./RegisterPanel.css";
 
-const URL = "http://bookstoreapiazure.azurewebsites.net/api/Auth/Register";
+const url = import.meta.env.VITE_BOOK_API_URL_AUTH;
+const URL = `${url}/Register`;
 
 function RegisterPanel() {
 

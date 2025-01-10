@@ -6,7 +6,8 @@ import useCustomFetch from "../Hooks/fetchapi";
 import bookImage from "../assets/ContentItemBackground.jpg";
 import "./Content.css"
 
-const URL = "http://bookstoreapiazure.azurewebsites.net/api/Book/All";
+const url = import.meta.env.VITE_BOOK_API_URL_BOOK;
+const URL = `${url}/All`;
 
 function Content({books,setBooks }) { 
 

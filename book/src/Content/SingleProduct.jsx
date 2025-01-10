@@ -7,9 +7,9 @@ import { FaArrowLeft } from 'react-icons/fa';
 import { IoStarSharp } from "react-icons/io5";
 import "./SingleProduct.css";
 
-const URL = "http://bookstoreapiazure.azurewebsites.net/api/Book";
-const RENT_URL = "http://bookstoreapiazure.azurewebsites.net/api/Book/RentBook";
-const DELETE_URL = "http://bookstoreapiazure.azurewebsites.net/api/Book/DeleteBook";
+const URL = import.meta.env.VITE_BOOK_API_URL_BOOK;
+const RENT_URL = `${URL}/RentBook`
+const DELETE_URL = `${URL}/DeleteBook`
 
 function SingleProduct() {
   const { id } = useParams();

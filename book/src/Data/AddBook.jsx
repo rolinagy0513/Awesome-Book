@@ -2,7 +2,8 @@ import React,{useEffect, useState} from "react";
 import { useNavigate } from 'react-router-dom'; 
 import useCustomFetch from "../Hooks/fetchapi";
 
-const URL = "http://bookstoreapiazure.azurewebsites.net/api/Book/AddBook"
+const url = import.meta.env.VITE_BOOK_API_URL_BOOK;
+const URL = `${url}/AddBook`;
 
 function AddBook(){
 

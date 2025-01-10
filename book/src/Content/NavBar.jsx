@@ -5,7 +5,8 @@ import {FaUserCircle, FaBook} from 'react-icons/fa';
 import { LuLogOut } from "react-icons/lu";
 import "./Navbar.css"; 
 
-const URL = "http://bookstoreapiazure.azurewebsites.net/api/Auth/Revoke";
+const url = import.meta.env.VITE_BOOK_API_URL_BOOK
+const URL = `${url}/Revoke`;
 
 
 function NavBar(){

@@ -3,8 +3,9 @@ import { useNavigate } from "react-router-dom";
 import useCustomFetch from "../Hooks/fetchapi";
 import "./Rented.css"
 
-const URL = "http://bookstoreapiazure.azurewebsites.net/api/Book/RentedBooks";
-const CANCEL_URL = "http://bookstoreapiazure.azurewebsites.net/api/Book/CancelRent";
+const url = import.meta.env.VITE_BOOK_API_URL_BOOK;
+const URL = `${url}/RentedBook`;
+const CANCEL_URL = `${url}/CancelRent`;
 
 function Rented() {
   const [rentedBooks, setRentedBooks] = useState([]);
@@ -13,33 +14,6 @@ function Rented() {
   const { getData, deleteData} = useCustomFetch();
 
   useEffect(() => {
-
-    //Ez a régi logika a custom hook nélkül ha valami nem megy akkor ezt használd!!
-    /*
-    const getData = async () => {
-      try {
-        const response = await fetch(URL, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            "x-api-key": "426BDC4A35584174A42D08EEB5D0300F",
-            "Authorization": `Bearer ${accessToken}`,
-          },
-        });
-
-        if (response.ok) {
-          const data = await response.json();
-          setRentedBooks(data);
-        } else {
-          console.error("Failed to fetch rented books:", response.status);
-        }
-      } catch (error) {
-        console.error("The API is not responding (RentedBooks):", error);
-      }
-    };
-
-    getData();
-    */
     
     const fetchdata = async () => {
       try {

@@ -2,8 +2,9 @@ import React,{useState, useEffect} from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import "./Editbook.css";
 
-
-const URL = "http://bookstoreapiazure.azurewebsites.net/api/Book/UpdateBook";
+const apikey = import.meta.env.VITE_BOOK_API_KEY;
+const url = import.meta.env.VITE_BOOK_API_URL_BOOK;
+const URL = `${url}/UpdateBook`;
 
 function EditBook(){
 
@@ -13,7 +14,6 @@ function EditBook(){
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [pages, setPages] = useState(0);
-  const apikey = import.meta.env.VITE_BOOK_API_KEY;
 
   const handleOnSubmit = async(e) =>{
 
