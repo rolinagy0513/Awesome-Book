@@ -50,5 +50,6 @@ VITE_BOOK_API_URL_AUTH: The base URL for authorization operations.
 VITE_BOOK_API_URL_BOOK: The base URL for book-related operations.
 
 Notes
+
   .Keep the .env file secure and avoid sharing it in public repositories.
   .Use the .env.example file as a template for future developers to configure their own environment variables.
