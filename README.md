@@ -36,7 +36,7 @@ Backend (Currently Non-Functional):
 
 API designed for book renting operations, written in C# .NET.
 
-Note: The backend API for this application is not currently operational due to financial reasons.
+Note: The backend API for this application is currently not operational due to financial reasons.
 
 
 
@@ -51,7 +51,7 @@ API, as well as to gain experience in teamwork and effective communication with 
 
 About the port configuration 
 
-  -The API currently works only on port 4735.
+The API currently works only on port 4735.
 
   
 About the .env.example File
