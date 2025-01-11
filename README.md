@@ -6,6 +6,7 @@ Built with a focus on intuitive design and seamless functionality, this project 
 While the foundation is solid, the project is still a work in progress. 
 It requires further improvements, adherence to best practices, and design enhancements to reach its full potential.
 
+
 🚀 Features
 
 Login/Register: You can logg in with existing users or register a new one.
@@ -28,21 +29,25 @@ CSS
 JavaScript
 React.js
 
+
 Backend (Currently Non-Functional):
 
 API designed for book renting operations, written in C# .NET.
 Note: The backend API for this application is not currently operational due to financial reasons.
+
 
 🎯 Purpose
 
 The primary intention of this project was to help me learn the fundamentals of fetching data from an
 API, as well as to gain experience in teamwork and effective communication with backend developers.
 
+
 📄 Configuration
 
 About the port configuration 
 
   -The API currently works only on port 4735.
+
   
 About the .env.example File
 
@@ -54,15 +59,18 @@ Rename the file:
 
 Rename the file from .env.example to .env so that GitHub will ignore it.
 
+
 Change the placeholders:
 
 Replace the placeholder values (e.g., your_api_key_here) with your actual API key.
+
 
 Update the URLs for the following operations:
 
 VITE_BOOK_API_URL_AUTH: The base URL for authorization operations.
 
 VITE_BOOK_API_URL_BOOK: The base URL for book-related operations.
+
 
 Notes
 
