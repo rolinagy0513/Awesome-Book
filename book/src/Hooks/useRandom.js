@@ -1,6 +1,9 @@
+const _= require("lodash");
+
 function randomNum() {
-  const randomNumber = Math.floor(Math.random() * 5) + 1;
-  return randomNumber;
+
+  const num  = _.random(1,5);
+  return num
 }
 
 export default randomNum;
